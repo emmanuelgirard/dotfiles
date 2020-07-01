@@ -11,6 +11,7 @@ antigen bundle command-not-found
 antigen bundle autojump
 antigen bundle git
 antigen bundle docker
+antigen bundle kubernetes
 antigen bundle dotenv
 antigen bundle vscode
 antigen bundle web-search
