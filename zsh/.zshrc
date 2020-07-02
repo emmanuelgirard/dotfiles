@@ -15,3 +15,8 @@ source /usr/local/share/antigen/antigen.zsh
 
 # Load Antigen configurations
 antigen init ~/.antigenrc
+
+# Using compinit -i instead of bashcompinit
+autoload -U +X compinit && compinit -i
+# Load HashiCorp vault auto-completion 
+complete -o nospace -C /usr/local/bin/vault vault

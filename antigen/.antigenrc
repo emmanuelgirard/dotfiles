@@ -15,6 +15,7 @@ antigen bundle kubernetes
 antigen bundle dotenv
 antigen bundle vscode
 antigen bundle web-search
+antigen bundle terraform
 
 # Python Plugins
 antigen bundle pip
@@ -26,6 +27,7 @@ antigen bundle python
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-apple-touchbar
 
 # Select theme.
 # antigen theme denysdovhan/spaceship-prompt
