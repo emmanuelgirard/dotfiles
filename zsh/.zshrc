@@ -20,3 +20,6 @@ antigen init ~/.antigenrc
 autoload -U +X compinit && compinit -i
 # Load HashiCorp vault auto-completion 
 complete -o nospace -C /usr/local/bin/vault vault
+
+# Disable AutoComplete Beep (beep, histbeep, listbeep, nolistbeep)
+unsetopt listbeep
