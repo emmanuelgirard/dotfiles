@@ -1,8 +1,9 @@
+# Export SHORT_HOST for ssh-agent environment file in .ssh
+export SHORT_HOST=$(hostname)
+
+# Python
 # Export Homebrew’s version of python and pip path
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-# Export SHORT_HOST for ssh-agent environment file in .ssh
-export SHORT_HOST=mbp01
 
 # Load virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
@@ -10,6 +11,21 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Export virtualenvwrapper ENV
 export PROJECT_HOME="$HOME/Repositories"
 
+#GNUBIN
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
+# OpenSSL
+# Export Homebrew's version of openssl path 
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# For compilers to find openssl@1.1 you may need to set:
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+# For pkg-config to find openssl@1.1 you may need to set:
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+# Antigen
 # Load Antigen
 source /usr/local/share/antigen/antigen.zsh
 
