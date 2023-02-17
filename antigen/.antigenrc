@@ -1,0 +1,37 @@
+# Load oh-my-zsh library.
+antigen use oh-my-zsh
+
+# For SSH, starting ssh-agent is annoying
+antigen bundle ssh-agent
+
+# Load bundles from the default repo (oh-my-zsh).
+antigen bundle sudo
+antigen bundle osx
+antigen bundle command-not-found
+antigen bundle autojump
+antigen bundle git
+antigen bundle docker
+antigen bundle kubernetes
+antigen bundle dotenv
+antigen bundle vscode
+antigen bundle web-search
+antigen bundle terraform
+
+# Python Plugins
+antigen bundle pip
+antigen bundle python
+# antigen bundle virtualenv
+# antigen bundle "MichaelAquilina/zsh-autoswitch-virtualenv"
+
+# Load bundles from external repos.
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-apple-touchbar
+
+# Select theme.
+# antigen theme denysdovhan/spaceship-prompt
+antigen theme robbyrussell
+
+# Tell Antigen that you're done.
+antigen apply
